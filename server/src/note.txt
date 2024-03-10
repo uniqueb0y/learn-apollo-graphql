@@ -1,0 +1,19 @@
+For Schema
+
+type SpaceCat {   --------> PascalCase
+  ageIsJust: Int! --------->CamelCase , Non nullable
+  missions: [Mission]
+  check: [Int]  ------------->Valid
+}
+
+"Comment is written in quotes"
+
+"""Comment with
+line break """
+
+All right, last thing before we start writing our schema: descriptions.
+
+It's good practice to document your schema, in the same way that it's helpful to comment your code. It makes it easier for your teammates (and future you) to make sense of what's going on. It also allows tools like the Apollo Studio Explorer to guide API consumers on what they can achieve with your API right when and where they need it.
+
+To do that, the SDL lets you add descriptions to both types and fields by writing strings (in quotation marks) 
+(IMPORTANT :directly above them.)
